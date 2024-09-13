@@ -10,11 +10,15 @@ import {
 } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
 import Errorpage from './pages/Errorpage.jsx';
+import Register from './pages/register.jsx';
+import Login from './pages/Login.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />} errorElement={<Errorpage />}>
       <Route index element={<HomePage />} />
+      <Route path='login' element={<Login />} />
+      <Route path='register' element={<Register />} />
     </Route>
   )
 );
