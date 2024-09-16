@@ -64,7 +64,7 @@ const Register = () => {
                 <label htmlFor='dateOfBirth' className='flex flex-col gap-2'>
                   <p className='font-medium'>Date Of Birth</p>
                   <input
-                    type='text'
+                    type='date'
                     {...register('dateOfBirth')}
                     placeholder='MM / DD / YYYY'
                     className='border border-primary rounded-md w-full bg-transparent py-2 px-5 font-light placeholder:font-light focus:outline-none'

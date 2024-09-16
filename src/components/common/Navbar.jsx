@@ -4,10 +4,10 @@ import MaxWidthWrapper from './MaxWidthWrapper';
 import { BiMenu, BiSearch } from 'react-icons/bi';
 
 const navlinks = [
-  { label: 'Vaccination Hub', link: 'vaccination-hub' },
-  { label: 'Health Hub', link: 'health-hub' },
-  { label: 'Profile', link: 'profile' },
-  { label: 'Log in', link: 'login' },
+  { label: 'Vaccination Hub', link: '/vaccination-hub' },
+  { label: 'Health Hub', link: '/health-hub' },
+  { label: 'Profile', link: '/profile' },
+  { label: 'Log in', link: '/login' },
 ];
 
 const Navbar = () => {
