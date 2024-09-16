@@ -13,6 +13,8 @@ import Errorpage from './pages/Errorpage.jsx';
 import Register from './pages/register.jsx';
 import Login from './pages/Login.jsx';
 import ProfilePage from './components/profile/index.jsx';
+import HealthHub from './pages/HealthHub.jsx';
+import VaccinationHub from './pages/VaccinationHub.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,6 +23,8 @@ const router = createBrowserRouter(
       <Route path='login' element={<Login />} />
       <Route path='register' element={<Register />} />
       <Route path='profile' element={<ProfilePage />} />
+      <Route path='health-hub' element={<HealthHub />} />
+      <Route path='vaccination-hub' element={<VaccinationHub />} />
     </Route>
   )
 );

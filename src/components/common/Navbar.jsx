@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom';
 import Logo from './Logo';
 import MaxWidthWrapper from './MaxWidthWrapper';
 import { BiMenu, BiSearch } from 'react-icons/bi';
+import { useState } from 'react';
+import SideBar from '../homepage/SideBar';
 
 const navlinks = [
   { label: 'Vaccination Hub', link: '/vaccination-hub' },
@@ -11,10 +13,15 @@ const navlinks = [
 ];
 
 const Navbar = () => {
+  const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+
   return (
     <MaxWidthWrapper className='flex items-center justify-between py-5 sm:py-10 w-screen sm:w-full'>
       <Logo />
-      <button className='bg-transparent p-0'>
+      <button
+        className='bg-transparent p-0 border-none'
+        onClick={() => setIsSideBarOpen(!isSideBarOpen)}
+      >
         <BiMenu className='text-4xl text-primary sm:hidden' />
       </button>
       <ul className='items-center gap-8 hidden sm:flex'>
@@ -46,6 +53,13 @@ const Navbar = () => {
           </label>
         </form>
       </ul>
+
+      {isSideBarOpen && (
+        <SideBar
+          setIsSideBarOpen={setIsSideBarOpen}
+          isSideBarOpen={isSideBarOpen}
+        />
+      )}
     </MaxWidthWrapper>
   );
 };
