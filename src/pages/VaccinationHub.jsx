@@ -7,6 +7,10 @@ import vacImg3 from '../images/vacImg3.png';
 import vacImg4 from '../images/vacImg4.png';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/utils';
+import BarChart from '../components/common/BarChart';
+import LineGraph from '../components/common/LineGraph';
+import PieChart from '../components/common/PieChart';
+import Footer from '../components/common/Footer';
 
 const data = [
   {
@@ -56,6 +60,7 @@ const ageRanges = [
 
 const VaccinationHub = () => {
   const [states, setStates] = useState([]);
+  const [chart, setChart] = useState('Pie Chart');
 
   const fetchStates = async () => {
     try {
@@ -231,7 +236,13 @@ const VaccinationHub = () => {
               )}
             </label>
           </section>
-          <div className='flex justify-end'>
+
+          {/* <section>
+            <p>Vaccination type</p>
+            <p>Dsh fhdf fhdfjf djkfjfo fhfsdfslif suynfsdf rde</p>
+          </section> */}
+
+          <div className='flex mt-6 justify-end'>
             <button
               type='submit'
               className={cn('py-1 text-sm rounded-md', {
@@ -242,7 +253,51 @@ const VaccinationHub = () => {
             </button>
           </div>
         </form>
+
+        <h1 className='font-playfair mt-16 mb-9 text-2xl text-center font-semibold sm:text-3xl'>
+          Vaccination Records
+        </h1>
+        <div className='flex items-center justify-center gap-3'>
+          <div
+            className={cn(
+              'text-primary bg-transparent py-1 rounded-none p-0 pr-3 ml-3 focus:outline-none cursor-pointer',
+              chart === 'Pie Chart' && 'border-b border-b-primary py-1'
+            )}
+            onClick={() => setChart('Pie Chart')}
+          >
+            Pie Chart
+          </div>
+          <hr className='border-r border-r-primary h-5' />
+
+          <div
+            className={cn(
+              'text-primary bg-transparent py-1 rounded-none p-0 pr-3 ml-3 focus:outline-none cursor-pointer',
+              chart === 'Bar Chart' && 'border-b border-b-primary py-1'
+            )}
+            onClick={() => setChart('Bar Chart')}
+          >
+            Bar Chart
+          </div>
+          <hr className='border-r border-r-primary h-5' />
+          <div
+            className={cn(
+              'text-primary bg-transparent py-1 rounded-none p-0 pr-3 ml-3 focus:outline-none cursor-pointer',
+              chart === 'Line Graph' && 'border-b border-b-primary py-1'
+            )}
+            onClick={() => setChart('Line Graph')}
+          >
+            Line Graph
+          </div>
+        </div>
+
+        <section className='mt-14'>
+          {chart === 'Pie Chart' && <PieChart />}
+          {chart === 'Bar Chart' && <BarChart />}
+          {chart === 'Line Graph' && <LineGraph />}
+        </section>
       </MaxWidthWrapper>
+
+      <Footer />
     </div>
   );
 };
