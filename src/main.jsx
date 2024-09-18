@@ -9,7 +9,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
-import Register from './pages/register.jsx';
+import Register from './pages/Register.jsx';
 import Login from './pages/Login.jsx';
 import ProfilePage from './components/profile/index.jsx';
 import HealthHub from './pages/HealthHub.jsx';
