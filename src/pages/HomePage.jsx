@@ -4,7 +4,7 @@ import '../App.css';
 import Navbar from '../components/common/Navbar';
 import MaxWidthWrapper from '../components/common/MaxWidthWrapper';
 import { features, recentArticles, testimonials } from '../../data';
-import Footer from '../components/common/footer';
+import Footer from '../components/common/Footer';
 
 function HomePage() {
   return (
@@ -112,7 +112,7 @@ function HomePage() {
             })}
           </div>
 
-          <div className='text-primary'>
+          <div className='text-primary mb-16'>
             <div className='w-full sm:w-1/2 mx-auto my-32 text-center gap-8'>
               <h2 className='font-playfair text-2xl font-bold leading-normal'>
                 TESTIMONIALS <br />

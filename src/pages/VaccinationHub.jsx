@@ -237,10 +237,52 @@ const VaccinationHub = () => {
             </label>
           </section>
 
-          {/* <section>
-            <p>Vaccination type</p>
+          <section className='mt-6'>
+            <p className='text-lg'>Vaccination type</p>
             <p>Dsh fhdf fhdfjf djkfjfo fhfsdfslif suynfsdf rde</p>
-          </section> */}
+            <div className='mt-5 w-full mx-auto flex flex-col gap-5 sm:grid sm:grid-cols-2 sm:justify-between sm:w-[90%]'>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+              <label htmlFor='' className='flex gap-5 items-center'>
+                <input type='checkbox' />
+                <p>Gsdbsdgs ghshdg</p>
+              </label>
+            </div>
+          </section>
 
           <div className='flex mt-6 justify-end'>
             <button
