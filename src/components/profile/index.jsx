@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import MaxWidthWrapper from '../common/MaxWidthWrapper';
 import Navbar from '../common/Navbar';
-import Footer from '../common/footer';
+import Footer from '../common/Footer';
 import { cn } from '../../../lib/utils';
 import profileImg from '../../images/profileImg.png';
 import { FaCamera } from 'react-icons/fa6';
