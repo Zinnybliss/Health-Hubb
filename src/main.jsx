@@ -9,12 +9,12 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import HomePage from './pages/HomePage.jsx';
-import Errorpage from './pages/Errorpage.jsx';
 import Register from './pages/register.jsx';
 import Login from './pages/Login.jsx';
 import ProfilePage from './components/profile/index.jsx';
 import HealthHub from './pages/HealthHub.jsx';
 import VaccinationHub from './pages/VaccinationHub.jsx';
+import Errorpage from "./pages/ErrorPage.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
