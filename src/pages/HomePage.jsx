@@ -5,6 +5,7 @@ import Navbar from '../components/common/Navbar';
 import MaxWidthWrapper from '../components/common/MaxWidthWrapper';
 import { features, recentArticles, testimonials } from '../../data';
 import Footer from '../components/common/Footer';
+// import { Bar, Doughnut } from 'react-chartjs-2';
 
 function HomePage() {
   return (
@@ -74,8 +75,62 @@ function HomePage() {
         </MaxWidthWrapper>
 
         <MaxWidthWrapper className='w-screen sm:w-full'>
-          {/* Your chart js here */}
-          <div></div>
+          {/* <section className='flex flex-col sm:flex-row'>
+            <div>
+              <Doughnut
+                data={{
+                  labels: ['Vaccinated population', 'Unvaccinated population'],
+                  datasets: [
+                    {
+                      label: 'Vaccination Rate',
+                      data: [60, 40],
+                      backgroundColor: ['#53B6F9', '#FF3D00'],
+                    },
+                  ],
+                }}
+                options={{
+                  responsive: true,
+                  cutout: `80%`,
+                  plugins: {
+                    legend: {
+                      display: true,
+                      position: 'bottom',
+                    },
+                    title: {
+                      display: true,
+                      text: 'Vaccination by rate',
+                    },
+                  },
+                }}
+              />
+            </div>
+            <div>
+              <Bar
+                data={{
+                  labels: ['Vaccinated population', 'Unvaccinated population'],
+                  datasets: [
+                    {
+                      data: [60, 40],
+                      backgroundColor: ['#53B6F9', '#FF3D00'],
+                    },
+                  ],
+                }}
+                options={{
+                  responsive: true,
+                  maintainAspectRatio: true,
+                  plugins: {
+                    legend: {
+                      display: true,
+                      position: 'bottom',
+                    },
+                    title: {
+                      display: false,
+                    },
+                  },
+                }}
+              />
+            </div>
+          </section> */}
 
           <div className='w-full p-4 text-center sm:w-3/5 mt-20 mx-auto'>
             <h2 className='text-tertiary text-2xl font-playfair font-bold mb-4 sm:text-xl'>
