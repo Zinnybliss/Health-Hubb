@@ -11,19 +11,19 @@ import pic6 from './src/images/picc5.png';
 export const features = [
   {
     feature: 'Vaccination Tracking',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Vitae sagittis erat sagittis adipiscing orci cursus. Velit tristique platea vestibulum porttitor pretium eu. In eu in phasellus hacfd ddfvvdvd ggrrtg gdweerfg webdf.',
+    desc: 'Health Hub makes health monitoring simple by providing accurate community-sourced data, real-time alerts, and an easy-to-use interface. It fosters collaboration with local health workers and ensures your data is secure and protected.',
     img: phone2,
     buttonText: 'View Stats',
   },
   {
     feature: 'Community Health Monitoring',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Et et etiam duis nulla eget a. Tincidunt euismod amet vestibulum nibh lacus quisque posuere molestie.',
+    desc: "Health Hub lets you monitor your community's health in real-time by tracking common illnesses, identifying trends, and sharing valuable resources. health data.",
     img: phone3,
     buttonText: 'Check Data',
   },
   {
     feature: 'Real Time Updates',
-    desc: 'Lorem ipsum dolor sit amet consectetur. Et et etiam duis nulla eget a. Tincidunt euismod amet vestibulum nibh lacus quisque posuere molestie.',
+    desc: 'You can customise your notifications based on location or interests, ensuring you receive relevant and timely updates to keep your community safe.',
     img: phone4,
     buttonText: 'Get Updates',
   },
@@ -32,21 +32,22 @@ export const features = [
 export const recentArticles = [
   {
     img: pic1,
-    title: 'Stay always hydrated while traveling',
+    title:
+      'The Importance of Community Health Data: How It Impacts Your Well-Being',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur, sint dignissimos',
+      'By collecting and sharing health information, communities can track trends, detect outbreaks, and allocate resources efficiently.',
   },
   {
     img: pic2,
-    title: 'Stay always hydrated while traveling',
+    title: 'Understanding Vaccination: Myths vs. Facts',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur, sint dignissimos',
+      'Vaccination is one of the most effective public health measures, yet misinformation continues to surround this crucial topic. ',
   },
   {
     img: pic3,
-    title: 'Stay always hydrated while traveling',
+    title: 'A Step-by-Step Guide to Keeping Your Health Records Organised',
     description:
-      'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo tenetur, sint dignissimos',
+      'Having all your important medical information readily available can streamline doctor visits, facilitate emergency care, and ...',
   },
 ];
 
@@ -54,22 +55,22 @@ export const testimonials = [
   {
     img: pic4,
     description:
-      'Lorem ipsum dolor sit amet consectetur. Senectus augue blandit enim arcu posuere. Tellus ut commodo.',
-    name: 'John Doe',
-    job: 'Healthcare Provider',
+      'I enjoyed every bit of the services provided by Health Hubb. You can seemlessly spool any data depending on what you are looking for',
+    name: 'Dr. James A.',
+    job: 'Health Centre Director, Nigeria',
   },
   {
     img: pic5,
     description:
-      'Lorem ipsum dolor sit amet consectetur. Senectus augue blandit enim arcu posuere. Tellus ut commodo.',
-    name: 'Jane Doe',
-    job: 'Business Manager',
+      'With Health Hubb, we’ve improved communication and collaboration between our clinic and the public. Sharing vaccination data and illness reports has made everyone more informed.',
+    name: 'Kemi P.',
+    job: 'Nurse, South Africa',
   },
   {
     img: pic6,
     description:
-      'Lorem ipsum dolor sit amet consectetur. Senectus augue blandit enim arcu posuere. Tellus ut commodo.',
-    name: 'Smith Davis',
-    job: 'IT specialist',
+      'Health Hubb allows me to stay informed about any health issues in our area. It’s easy to use, and the alerts keep me updated on what’s happening around me.',
+    name: 'Seun B.',
+    job: 'Teacher, Nigeria',
   },
 ];

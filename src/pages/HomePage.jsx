@@ -5,6 +5,7 @@ import Navbar from '../components/common/Navbar';
 import MaxWidthWrapper from '../components/common/MaxWidthWrapper';
 import { features, recentArticles, testimonials } from '../../data';
 import Footer from '../components/common/Footer';
+import { Bar, Doughnut } from 'react-chartjs-2';
 // import { Bar, Doughnut } from 'react-chartjs-2';
 
 function HomePage() {
@@ -16,7 +17,7 @@ function HomePage() {
           <MaxWidthWrapper className='hero flex-col sm:flex-row w-screen sm:w-full'>
             <div className='hero1 w-full sm:w-1/2'>
               <h1 className='font-playfair font-bold text-3xl text-primary leading-normal sm:text-[2.8rem]'>
-                Seamlessly track your health with MVP
+                Seamlessly track your health with Trackit Wellness Kit
               </h1>
               <p>
                 Track vaccinations, monitor community health, and get real-time
@@ -36,8 +37,11 @@ function HomePage() {
               OUR IMPRESSIVE FEATURES
             </h1>
             <p className='font-inter text-base sm:text-sm'>
-              Lorem ipsum dolor sit amet consectetur. At posuere nunc blandit
-              leo amet sodales scelerisque. Mauris.
+              Health Hub empowers communities by providing access to accurate,
+              community-sourced health data, helping users make informed health
+              decisions. With a user-friendly interface, real-time alerts, and a
+              collaborative platform, Health Hub ensures health monitoring is
+              simple and secure, while protecting user privacy.
             </p>
           </div>
 
@@ -75,7 +79,7 @@ function HomePage() {
         </MaxWidthWrapper>
 
         <MaxWidthWrapper className='w-screen sm:w-full'>
-          {/* <section className='flex flex-col sm:flex-row'>
+          <section className='flex flex-col sm:flex-row'>
             <div>
               <Doughnut
                 data={{
@@ -130,24 +134,22 @@ function HomePage() {
                 }}
               />
             </div>
-          </section> */}
+          </section>
 
           <div className='w-full p-4 text-center sm:w-3/5 mt-20 mx-auto'>
             <h2 className='text-tertiary text-2xl font-playfair font-bold mb-4 sm:text-xl'>
               Recent Articles
             </h2>
             <p className='text-tertiary text-base mb-5 sm:text-sm'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-              numquam explicabo molestias dolore facere commodi quis tenetur
-              ullam qui impedit, pariatur voluptatem iste fugit consequuntur
-              omnis id ex modi non!
+              Stay up to date with health related articles to help you keep
+              informed
             </p>
           </div>
           <div className='flex flex-col gap-10 w-full sm:flex-row sm:w-[88%] mx-auto sm:gap-5'>
             {recentArticles.map((article, i) => {
               return (
                 <div
-                  className='bg-secondary w-full mx-auto sm:w-[35%] pb-5 rounded-md sm:pb-3'
+                  className='bg-secondary text-white w-full mx-auto sm:w-[35%] pb-5 rounded-md sm:pb-3'
                   key={i}
                 >
                   <img
@@ -173,10 +175,9 @@ function HomePage() {
                 TESTIMONIALS <br />
                 WHAT OUR USERS SAY
               </h2>
-              <p className='font-inter text-base mt-6 w-full sm:w-4/6 mx-auto'>
-                Lorem ipsum dolor sit amet consectetur. Tortor pharetra massa
-                lacus diam quis adipiscing.
-              </p>
+              {/* <p className='font-inter text-base mt-6 w-full sm:w-4/6 mx-auto'>
+                Testimonial from some of our users
+              </p> */}
             </div>
             <div className='flex flex-col gap-20 sm:gap-5 sm:w-4/5 mx-auto sm:flex-row'>
               {testimonials.map((testimonial, i) => {

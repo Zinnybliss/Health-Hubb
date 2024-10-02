@@ -15,27 +15,27 @@ import Footer from '../components/common/Footer';
 const data = [
   {
     img: vacImg1,
-    title: 'Stay Always Hydrated While Traveling',
+    title: 'Understanding Vaccination: Myths vs. Facts',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      "Vaccines don't cause diseases, but rather stimulate immunity using weakened or inactive germ parts.",
   },
   {
     img: vacImg2,
-    title: 'Stay Always Hydrated While Traveling',
+    title: 'The Importance of Community Health Data',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      'Community health data plays a vital role in enhancing individual and public health outcomes.',
   },
   {
     img: vacImg3,
-    title: 'Stay Always Hydrated While Traveling',
+    title: 'Organize Your Health Records in 5 Easy Steps',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      'Maintaining organised health records is essential for managing your personal health effectively. ',
   },
   {
     img: vacImg4,
-    title: 'Stay Always Hydrated While Traveling',
+    title: 'The Role of Technology in Modern Health Monitoring',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      'The rise of technology has transformed the way we monitor and manage our health. Digital health ',
   },
 ];
 
@@ -243,43 +243,43 @@ const VaccinationHub = () => {
             <div className='mt-5 w-full mx-auto flex flex-col gap-5 sm:grid sm:grid-cols-2 sm:justify-between sm:w-[90%]'>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>BCG (Bacillus Calmette-Guérin)</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>OPV (Oral Polio Vaccine)</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>DTP (Diphtheria, Tetanus, Pertussis)</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>Hepatitis B Vaccine</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>MMR (Measles, Mumps, Rubella)</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>PCV (Pneumococcal Conjugate Vaccine)</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>Yellow Fever Vaccine</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>HPV (Human Papillomavirus Vaccine)</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>Influenza Vaccine</p>
               </label>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
-                <p>Gsdbsdgs ghshdg</p>
+                <p>COVID-19 Vaccine</p>
               </label>
             </div>
           </section>

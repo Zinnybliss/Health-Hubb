@@ -16,40 +16,59 @@ import { BiSearch } from 'react-icons/bi';
 const data = [
   {
     img: vacImg1,
-    title: 'Stay Always Hydrated While Traveling',
+    title:
+      'The Importance of Community Health Data: How It Impacts Your Well-Being',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      "In today's interconnected world, community health data plays a vital role in enhancing individual and public health outcomes. By collecting and sharing health-related information, communities can identify trends, monitor disease outbreaks, and allocate resources more effectively.",
   },
   {
     img: vacImg2,
-    title: 'Stay Always Hydrated While Traveling',
+    title: 'Understanding Vaccination: Myths vs. Facts',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      'Vaccination is one of the most effective public health measures, yet misinformation continues to surround this crucial topic. Understanding the myths and facts about vaccinations can empower individuals to make informed decisions regarding their health and the health of their communities.',
   },
   {
     img: vacImg3,
-    title: 'Stay Always Hydrated While Traveling',
+    title: 'A Step-by-Step Guide to Keeping Your Health Records Organised',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      'Maintaining organised health records is essential for managing your personal health effectively. Having all your important medical information readily available can streamline doctor visits, facilitate emergency care, and help track your health over time. Here’s a step-by-step guide to keeping your health records organised.',
   },
   {
     img: vacImg4,
-    title: 'Stay Always Hydrated While Traveling',
+    title: 'The Role of Technology in Modern Health Monitoring',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      'The rise of technology has transformed the way we monitor and manage our health. Digital health tools, such as health apps and online platforms, empower individuals and communities to take control of their health data like never before. One such platform is Health Hub, which facilitates the collection and sharing of crucial health information within communities.',
   },
   {
     img: vacImg5,
-    title: 'Stay Always Hydrated While Traveling',
+    title: 'Promoting Health in Your Community: Easy Ways to Get Involved',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      'Getting involved in community health initiatives is a powerful way to make a difference in the lives of those around you. Here are some easy ways to promote health in your community and contribute to a healthier environment.',
   },
   {
     img: vacImg6,
     title: 'Stay Always Hydrated While Traveling',
     description:
-      'Lorem ipsum dolor sit amet consectetur. Amet duis eget quam nunc pellentesque. Nisl metus.',
+      'Travel can often disrupt your normal routine, leading to dehydration, which may cause fatigue, headaches, dizziness, and even confusion. To ensure you stay hydrated and feel your best during your travels, here are some simple yet effective tips.',
   },
+];
+
+const commonIllness = [
+  'Malaria',
+  'HIV/AIDS',
+  'Diarrhoeal Diseases',
+  'Respiratory Infections (Pneumonia, Tuberculosis)',
+  'Lassa Fever',
+  'Dengue Fever',
+  'Hepatitis B',
+  'Meningitis',
+  'Measles',
+  'Yellow Fever',
+  'Sickle Cell Disease',
+  'Diabetes',
+  'Hypertension',
+  'Cholera',
+  'Typhoid Fever',
 ];
 
 const ageRanges = [
@@ -406,13 +425,13 @@ const HealthHub = () => {
             COMMON ILLNESS
           </h1>
           <p className='text-center mb-6'>
-            Dsh fhdf fhdfjf djkfjfo fhfsdfslif suynfsdf rde
+            Some common illness are listed below
           </p>
           <ul className='w-full mx-auto grid gap-4 sm:grid-cols-3 sm:w-4/5'>
-            {Array.from({ length: 6 }).map((_, i) => {
+            {commonIllness.map((item, i) => {
               return (
                 <li key={i} className='ml-10 list-disc'>
-                  Gsdbsdgs ghshdg
+                  {item}
                 </li>
               );
             })}

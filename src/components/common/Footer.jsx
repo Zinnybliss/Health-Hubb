@@ -11,7 +11,7 @@ const Footer = () => {
           <h3 className='text-lg font-medium mb-3'>Newsletter</h3>
           <aside className='flex flex-col gap-2'>
             <p className='text-wrap'>
-              Lorem ipsum dolor sit amet consectetur, Ac in.
+              Subscribe to the Health Hubb newsletter for regular updates.
             </p>
             <div className='subsect4 flex flex-col gap-4'>
               <label
@@ -35,15 +35,14 @@ const Footer = () => {
               <img src={logoPic} className='w-14 hidden sm:block mb-3' />
             </a>
             <p className='hidden sm:block text-wrap'>
-              Lorem ipsum dolor sit amet consectetur. Mattis quis nibh elit eu
-              lectus sollicitudin gravida lorem.
+              Empowering Communities with Real-Time Health Insights.
             </p>
           </aside>
           <aside className='w-full sm:w-4/5'>
             <h3 className='text-lg font-medium mb-3'>Contact Us</h3>
             <p className='flex items-center gap-3'>
               <BiPhone />
-              xxxx xxx xxxx
+              +234 8172626389
             </p>
             <p className='flex items-center gap-3'>
               <BsEnvelopePaper />
@@ -76,7 +75,7 @@ const Footer = () => {
           <h3 className='text-lg font-medium mb-3'>Newsletter</h3>
           <aside className='flex flex-col gap-2'>
             <p className='text-wrap'>
-              Lorem ipsum dolor sit amet consectetur, Ac in.
+              Subscribe to the Health Hubb newsletter for regular updates
             </p>
             <div className='subsect4 flex flex-col gap-4'>
               <label
