@@ -239,7 +239,7 @@ const VaccinationHub = () => {
 
           <section className='mt-6'>
             <p className='text-lg'>Vaccination type</p>
-            <p>Dsh fhdf fhdfjf djkfjfo fhfsdfslif suynfsdf rde</p>
+            <p>Please select the vaccination type you are interested in </p>
             <div className='mt-5 w-full mx-auto flex flex-col gap-5 sm:grid sm:grid-cols-2 sm:justify-between sm:w-[90%]'>
               <label htmlFor='' className='flex gap-5 items-center'>
                 <input type='checkbox' />
@@ -284,14 +284,14 @@ const VaccinationHub = () => {
             </div>
           </section>
 
-          <div className='flex mt-6 justify-end'>
+          <div className='flex mt-16 justify-center'>
             <button
               type='submit'
-              className={cn('py-1 text-sm rounded-md', {
+              className={cn('py-2 px-16 rounded-md', {
                 'disabled:cursor-wait': isSubmitting,
               })}
             >
-              Continue
+              Apply
             </button>
           </div>
         </form>

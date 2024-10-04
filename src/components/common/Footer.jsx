@@ -1,12 +1,19 @@
-import logoPic from '../../images/img1.png';
+import logoPic from '../../images/logo.png';
+import instagramIcon from '../../images/insta.png';
+import youtubeIcon from '../../images/youtube.png';
+import facebookIcon from '../../images/facebook.png';
 import { BsEnvelopePaper } from 'react-icons/bs';
 import { BiEnvelope, BiPhone } from 'react-icons/bi';
 import MaxWidthWrapper from './MaxWidthWrapper';
+import Logo from './Logo';
 
 const Footer = () => {
   return (
     <footer className='bg-secondary'>
       <MaxWidthWrapper className='flex flex-col gap-10 text-white h-full w-full items-start pt-10 pb-5 justify-between sm:gap-16 sm:flex-row'>
+        <aside className='sm:hidden'>
+          <Logo />
+        </aside>
         <div className='w-full sm:hidden sm:w-1/4'>
           <h3 className='text-lg font-medium mb-3'>Newsletter</h3>
           <aside className='flex flex-col gap-2'>
@@ -94,8 +101,19 @@ const Footer = () => {
           </aside>
         </div>
       </MaxWidthWrapper>
-      <div>
+      <div className='mt-10'>
         <hr />
+        <aside className='py-8 flex items-center justify-center gap-8'>
+          <a href='instagram'>
+            <img src={instagramIcon} alt='Instagram icon' />
+          </a>
+          <a href='youtube'>
+            <img src={youtubeIcon} alt='Youtube icon' />
+          </a>
+          <a href='facebook'>
+            <img src={facebookIcon} alt='Facebook icon' />
+          </a>
+        </aside>
       </div>
     </footer>
   );

@@ -19,41 +19,41 @@ const data = [
     title:
       'The Importance of Community Health Data: How It Impacts Your Well-Being',
     description:
-      "In today's interconnected world, community health data plays a vital role in enhancing individual and public health outcomes. By collecting and sharing health-related information, communities can identify trends, monitor disease outbreaks, and allocate resources more effectively.",
+      "In today's interconnected world, community health data plays a vital role in enhancing individual...",
   },
   {
     img: vacImg2,
     title: 'Understanding Vaccination: Myths vs. Facts',
     description:
-      'Vaccination is one of the most effective public health measures, yet misinformation continues to surround this crucial topic. Understanding the myths and facts about vaccinations can empower individuals to make informed decisions regarding their health and the health of their communities.',
+      'Vaccination is one of the most effective public health measures, yet misinformation continues to ...',
   },
   {
     img: vacImg3,
     title: 'A Step-by-Step Guide to Keeping Your Health Records Organised',
     description:
-      'Maintaining organised health records is essential for managing your personal health effectively. Having all your important medical information readily available can streamline doctor visits, facilitate emergency care, and help track your health over time. Here’s a step-by-step guide to keeping your health records organised.',
+      'Vaccination is one of the most effective public health measures, yet misinformation continues to ...',
   },
   {
     img: vacImg4,
     title: 'The Role of Technology in Modern Health Monitoring',
     description:
-      'The rise of technology has transformed the way we monitor and manage our health. Digital health tools, such as health apps and online platforms, empower individuals and communities to take control of their health data like never before. One such platform is Health Hub, which facilitates the collection and sharing of crucial health information within communities.',
+      'The rise of technology has transformed the way we monitor and manage our health...',
   },
   {
     img: vacImg5,
     title: 'Promoting Health in Your Community: Easy Ways to Get Involved',
     description:
-      'Getting involved in community health initiatives is a powerful way to make a difference in the lives of those around you. Here are some easy ways to promote health in your community and contribute to a healthier environment.',
+      'Here are some easy ways to promote health in your community and contribute to a healthier ...',
   },
   {
     img: vacImg6,
     title: 'Stay Always Hydrated While Traveling',
     description:
-      'Travel can often disrupt your normal routine, leading to dehydration, which may cause fatigue, headaches, dizziness, and even confusion. To ensure you stay hydrated and feel your best during your travels, here are some simple yet effective tips.',
+      'Travel can often disrupt your normal routine, leading to dehydration, which may cause ...',
   },
 ];
 
-const commonIllness = [
+const commonIllnessDesktop = [
   'Malaria',
   'HIV/AIDS',
   'Diarrhoeal Diseases',
@@ -69,6 +69,14 @@ const commonIllness = [
   'Hypertension',
   'Cholera',
   'Typhoid Fever',
+];
+const commonIllnessMobile = [
+  'Dengue Fever',
+  'Hepatitis B',
+  'Meningitis',
+  'Measles',
+  'Yellow Fever',
+  'Cholera',
 ];
 
 const ageRanges = [
@@ -425,10 +433,20 @@ const HealthHub = () => {
             COMMON ILLNESS
           </h1>
           <p className='text-center mb-6'>
-            Some common illness are listed below
+            Below are list of common illnesses that you might be interested in
+            learning more abut, click on them to learn more about them.
           </p>
-          <ul className='w-full mx-auto grid gap-4 sm:grid-cols-3 sm:w-4/5'>
-            {commonIllness.map((item, i) => {
+          <ul className='hidden w-full mx-auto sm:grid gap-4 sm:grid-cols-3 sm:w-4/5'>
+            {commonIllnessDesktop.map((item, i) => {
+              return (
+                <li key={i} className='ml-10 list-disc'>
+                  {item}
+                </li>
+              );
+            })}
+          </ul>
+          <ul className='w-full mx-auto grid gap-4 sm:grid-cols-3 sm:w-4/5 sm:hidden'>
+            {commonIllnessMobile.map((item, i) => {
               return (
                 <li key={i} className='ml-10 list-disc'>
                   {item}
@@ -466,7 +484,7 @@ const HealthHub = () => {
             {data.map((item, i) => {
               return (
                 <div
-                  className='bg-white w-full pb-5 rounded-2xl h-full sm:pb-3'
+                  className='flex flex-col justify-between bg-white w-full pb-5 rounded-2xl h-full sm:pb-3'
                   key={i}
                 >
                   <img

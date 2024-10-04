@@ -31,17 +31,15 @@ function HomePage() {
           </MaxWidthWrapper>
         </div>
 
-        <MaxWidthWrapper className='bg-secondary py-20 w-screen sm:w-full'>
+        <MaxWidthWrapper className='bg-secondary py-20 w-screen text-white font-light sm:w-full'>
           <div className='flex flex-col gap-5 text-center w-full mx-auto sm:w-3/4'>
-            <h1 className='font-playfair text-2xl font-bold'>
+            <h1 className='font-playfair text-2xl font-medium'>
               OUR IMPRESSIVE FEATURES
             </h1>
             <p className='font-inter text-base sm:text-sm'>
-              Health Hub empowers communities by providing access to accurate,
-              community-sourced health data, helping users make informed health
-              decisions. With a user-friendly interface, real-time alerts, and a
-              collaborative platform, Health Hub ensures health monitoring is
-              simple and secure, while protecting user privacy.
+              Trackit Wellness Kit provides simple, secure health monitoring
+              with community-sourced data, real-time alerts, and protected
+              privacy.
             </p>
           </div>
 
@@ -53,7 +51,7 @@ function HomePage() {
                   className='flex flex-col items-center gap-10 text-center sm:text-start sm:even:flex-row-reverse sm:even:gap-60 sm:even:text-right sm:flex-row sm:items-center sm:gap-32'
                 >
                   <aside className='w-full font-inter sm:mr-28'>
-                    <h2 className='text-xl font-bold mb-4'>{item.feature}</h2>
+                    <h2 className='text-xl font-medium mb-4'>{item.feature}</h2>
                     <p className='text-base mb-5 sm:text-sm'>{item.desc}</p>
                     <button className='text-sm rounded-lg hidden sm:inline-block'>
                       {item.buttonText}
@@ -78,15 +76,22 @@ function HomePage() {
           </aside>
         </MaxWidthWrapper>
 
-        <MaxWidthWrapper className='w-screen sm:w-full'>
-          <section className='flex flex-col sm:flex-row'>
+        <MaxWidthWrapper className='w-screen mt-12 sm:w-full'>
+          <h2 className='font-bold text-2xl text-center'>
+            Yaba Health Summary
+          </h2>
+          <p className='text-center mt-3 mb-24'>
+            If you are not resident in Yaba, update your information on your
+            profile to get for your location
+          </p>
+          <section className='flex flex-col sm:flex-row gap-14'>
             <div>
               <Doughnut
                 data={{
                   labels: ['Vaccinated population', 'Unvaccinated population'],
                   datasets: [
                     {
-                      label: 'Vaccination Rate',
+                      label: 'Vaccination Population',
                       data: [60, 40],
                       backgroundColor: ['#53B6F9', '#FF3D00'],
                     },
@@ -108,18 +113,38 @@ function HomePage() {
                 }}
               />
             </div>
-            <div>
+            <div className='sm:h-96'>
               <Bar
+                className='sm:h-full'
                 data={{
-                  labels: ['Vaccinated population', 'Unvaccinated population'],
+                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June'],
                   datasets: [
                     {
-                      data: [60, 40],
-                      backgroundColor: ['#53B6F9', '#FF3D00'],
+                      label: 'Covid',
+                      data: [40, 40, 20, 60, 40, 70, 90],
+                      backgroundColor: ['#53B6F9'],
+                    },
+                    {
+                      label: 'Typhoid',
+                      data: [35, 70, 35, 35, 35, 35],
+                      backgroundColor: ['#FF3D00'],
+                    },
+                    {
+                      label: 'Fever',
+                      data: [55, 55, 55, 55, 55, 20],
+                      backgroundColor: ['#FFC107'],
                     },
                   ],
                 }}
                 options={{
+                  scales: {
+                    x: {
+                      grid: { display: false },
+                    },
+                    y: {
+                      grid: { display: false },
+                    },
+                  },
                   responsive: true,
                   maintainAspectRatio: true,
                   plugins: {
@@ -128,7 +153,9 @@ function HomePage() {
                       position: 'bottom',
                     },
                     title: {
-                      display: false,
+                      display: true,
+                      text: 'Monthly Sickness Prevelance',
+                      position: 'bottom',
                     },
                   },
                 }}

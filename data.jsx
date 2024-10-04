@@ -11,13 +11,13 @@ import pic6 from './src/images/picc5.png';
 export const features = [
   {
     feature: 'Vaccination Tracking',
-    desc: 'Health Hub makes health monitoring simple by providing accurate community-sourced data, real-time alerts, and an easy-to-use interface. It fosters collaboration with local health workers and ensures your data is secure and protected.',
+    desc: 'Trackit Wellness Kit  makes health monitoring simple by providing accurate community-sourced data, real-time alerts, and an easy-to-use interface. It fosters collaboration with local health workers and ensures your data is secure and protected.',
     img: phone2,
     buttonText: 'View Stats',
   },
   {
     feature: 'Community Health Monitoring',
-    desc: "Health Hub lets you monitor your community's health in real-time by tracking common illnesses, identifying trends, and sharing valuable resources. health data.",
+    desc: "Trackit Wellness Kit  lets you monitor your community's health in real-time by tracking common illnesses, identifying trends, and sharing valuable resources. health data.",
     img: phone3,
     buttonText: 'Check Data',
   },
