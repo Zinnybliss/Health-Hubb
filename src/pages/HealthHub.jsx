@@ -302,7 +302,7 @@ const HealthHub = () => {
 
             <section className='mt-14 w-full mx-auto sm:w-1/2'>
               {chart === 'Pie Chart' && (
-                <section className='flex flex-col gap-5'>
+                <section className='h-[30rem] flex flex-col gap-5'>
                   <Pie
                     data={{
                       labels: [
@@ -342,14 +342,15 @@ const HealthHub = () => {
                 </section>
               )}
               {chart === 'Bar Chart' && (
-                <section className='flex flex-col gap-5'>
+                <section className='h-[30rem] flex flex-col gap-5'>
                   <Bar
+                    className='h-[30rem]'
                     data={{
                       labels: [
-                        '0-5years',
-                        '0-5years',
-                        '6-15years',
-                        '6-15years',
+                        '0-10years',
+                        '11-20years',
+                        '21-30years',
+                        '31years and above',
                       ],
                       datasets: [
                         {
@@ -383,14 +384,14 @@ const HealthHub = () => {
                 </section>
               )}
               {chart === 'Line Graph' && (
-                <section className='flex flex-col gap-5'>
+                <section className='h-[30rem] flex flex-col gap-5'>
                   <Line
                     data={{
                       labels: [
-                        '0-5years',
-                        '0-5years',
-                        '6-15years',
-                        '6-15years',
+                        '0-10years',
+                        '11-20years',
+                        '21-30years',
+                        '31years and above',
                       ],
                       datasets: [
                         {
@@ -430,7 +431,7 @@ const HealthHub = () => {
 
         <article className='mt-10'>
           <h1 className='font-playfair mb-3 text-2xl text-center font-bold'>
-            COMMON ILLNESS
+            Common Illness
           </h1>
           <p className='text-center mb-6'>
             Below are list of common illnesses that you might be interested in
@@ -458,11 +459,11 @@ const HealthHub = () => {
       </MaxWidthWrapper>
       <aside className='mt-32 mb-56'>
         <h1 className='font-playfair mb-8 text-2xl text-center font-bold'>
-          VACCINATION INFORMATION
+          Vaccination Information
         </h1>
         <div className=' w-full bg-secondary px-5 py-20 sm:px-40'>
           <header className='flex justify-between items-center'>
-            <h1 className='text-white text-lg font-medium'>
+            <h1 className='text-white text-lg font-medium font-playfair'>
               Vaccination Types
             </h1>
             <form className='sm:ml-8 w-44 rounded-md py-1 px-3 bg-white sm:w-96'>

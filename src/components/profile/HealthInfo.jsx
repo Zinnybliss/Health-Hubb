@@ -26,7 +26,7 @@ const HealthInfo = () => {
         onSubmit={handleSubmit(onSubmit)}
         className='flex flex-col my-10 gap-10'
       >
-        <section className='flex w-full flex-col gap-6 sm:flex-row sm:gap-14 sm:ml-3'>
+        <section className='flex w-full flex-col gap-6 sm:flex-row sm:gap-14'>
           <div className='w-full flex flex-col gap-6'>
             <label htmlFor='weight' className='flex flex-col w-full gap-2'>
               <p className='font-medium'>Weight</p>

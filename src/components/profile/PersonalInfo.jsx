@@ -24,7 +24,7 @@ const PersonalInfo = () => {
 
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className='flex flex-col my-10 ml-0 gap-10 sm:ml-3'
+        className='flex flex-col my-10 gap-10'
       >
         <section className='flex w-full flex-col gap-6 sm:flex-row sm:gap-14'>
           <div className='w-full flex flex-col gap-6'>

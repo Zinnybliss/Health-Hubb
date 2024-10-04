@@ -60,9 +60,9 @@ const ProfilePage = () => {
               </aside>
               <FaCamera className='absolute -bottom-1 -right-1 text-xl text-white' />
             </div>
-            <button className='border-white py-1 px-3 text-sm h-fit flex self-end bg-transparent font-normal text-white'>
+            <p className='border-white py-1 px-3 text-sm h-fit flex self-end bg-transparent font-normal text-white font-playfair'>
               Edit Profile
-            </button>
+            </p>
           </section>
 
           {activeLink === 'Personal Information' ? (
