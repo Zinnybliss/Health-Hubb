@@ -118,7 +118,7 @@ const VaccinationHub = () => {
                   <aside className='pt-5 px-5'>
                     <h4 className='font-bold mb-3'>{item.title}</h4>
                     <p className='text-sm mb-4'>{item.description}</p>
-                    <a href='#' className='font-medium'>
+                    <a href='#' className='font-medium text-primary italic'>
                       Read More
                     </a>
                   </aside>

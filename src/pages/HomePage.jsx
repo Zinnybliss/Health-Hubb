@@ -189,7 +189,9 @@ function HomePage() {
                   <aside className='pt-5 px-5'>
                     <h4 className='font-bold mb-3'>{article.title}</h4>
                     <p className='text-sm mb-4'>{article.description}</p>
-                    <a href='#'>Read More</a>
+                    <a href='#' className=' italic text-primary'>
+                      Read More
+                    </a>
                   </aside>
                 </div>
               );
@@ -221,7 +223,7 @@ function HomePage() {
                     <h3 className='mt-10 text-sm font-bold'>
                       {testimonial.name}
                     </h3>
-                    <h3 className='text-sm'>{testimonial.job}</h3>
+                    <h3 className='text-sm italic'>{testimonial.job}</h3>
                   </div>
                 );
               })}
