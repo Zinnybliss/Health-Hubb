@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form';
 import MaxWidthWrapper from '../components/common/MaxWidthWrapper';
 import Navbar from '../components/common/Navbar';
-import vacImg1 from '../images/vacImg1.png';
-import vacImg2 from '../images/vacImg2.png';
+import vacImg1 from '../images/newimg1.jpg';
+import vacImg2 from '../images/newimg2.jpg';
 import vacImg3 from '../images/vacImg3.png';
-import vacImg4 from '../images/vacImg4.png';
+import vacImg4 from '../images/newimg5.jpg';
 import { useEffect, useState } from 'react';
 import { cn } from '../../lib/utils';
 import BarChart from '../components/common/BarChart';

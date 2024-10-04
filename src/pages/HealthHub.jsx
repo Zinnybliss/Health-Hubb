@@ -5,12 +5,12 @@ import Navbar from '../components/common/Navbar';
 import { useForm } from 'react-hook-form';
 import { cn } from '../../lib/utils';
 import { Bar, Line, Pie } from 'react-chartjs-2';
-import vacImg1 from '../images/vaccImg1.png';
-import vacImg2 from '../images/vaccImg2.png';
-import vacImg3 from '../images/vaccImg3.png';
-import vacImg4 from '../images/vaccImg4.png';
+import vacImg1 from '../images/newimg2.jpg';
+import vacImg2 from '../images/newimg1.jpg';
+import vacImg3 from '../images/newimg3.jpg';
+import vacImg4 from '../images/newimg5.jpg';
 import vacImg5 from '../images/vaccImg5.png';
-import vacImg6 from '../images/vaccImg6.png';
+import vacImg6 from '../images/newimg6.jpg';
 import { BiSearch } from 'react-icons/bi';
 
 const data = [
@@ -461,7 +461,7 @@ const HealthHub = () => {
         <h1 className='font-playfair mb-8 text-2xl text-center font-bold'>
           Vaccination Information
         </h1>
-        <div className=' w-full bg-secondary px-5 py-20 sm:px-40'>
+        <div className=' w-full bg-secondary px-5 py-20 sm:px-32'>
           <header className='flex justify-between items-center'>
             <h1 className='text-white text-lg font-medium font-playfair'>
               Vaccination Types

@@ -178,14 +178,16 @@ function HomePage() {
             {recentArticles.map((article, i) => {
               return (
                 <div
-                  className='bg-secondary text-white w-full mx-auto sm:w-[35%] rounded-md pb-3 sm:pb-0 '
+                  className='bg-secondary text-white w-full mx-auto sm:w-[35%] rounded-md pb-5 '
                   key={i}
                 >
-                  <img
-                    src={article.img}
-                    alt='Patience Image'
-                    className='h-1/2 w-full'
-                  />
+                  <div className='h-60 w-full'>
+                    <img
+                      src={article.img}
+                      alt='Patience Image'
+                      className='h-full w-full'
+                    />
+                  </div>
                   <aside className='pt-5 px-5'>
                     <h4 className='font-bold mb-3'>{article.title}</h4>
                     <p className='text-sm mb-4'>{article.description}</p>

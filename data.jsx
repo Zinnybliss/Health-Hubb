@@ -1,9 +1,9 @@
 import phone2 from './src/images/Nothing Phone 6.png';
 import phone3 from './src/images/Nothing Phone 4.png';
 import phone4 from './src/images/Nothing Phone 10.png';
-import pic1 from './src/images/pic.png';
-import pic2 from './src/images/picc1.png';
-import pic3 from './src/images/picc2.png';
+import pic1 from './src/images/newimg2.jpg';
+import pic2 from './src/images/newimg1.jpg';
+import pic3 from './src/images/newimg3.jpg';
 import pic4 from './src/images/picc3.png';
 import pic5 from './src/images/picc4.png';
 import pic6 from './src/images/picc5.png';
