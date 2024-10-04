@@ -306,10 +306,10 @@ const HealthHub = () => {
                   <Pie
                     data={{
                       labels: [
-                        '0-5years',
-                        '0-5years',
-                        '6-15years',
-                        '6-15years',
+                        '0-10years',
+                        '11-20years',
+                        '21-30years',
+                        '31years and above',
                       ],
                       datasets: [
                         {
@@ -484,7 +484,7 @@ const HealthHub = () => {
             {data.map((item, i) => {
               return (
                 <div
-                  className='flex flex-col justify-between bg-white w-full pb-5 rounded-2xl h-full sm:pb-3'
+                  className='bg-white w-full pb-5 rounded-2xl h-full sm:pb-3'
                   key={i}
                 >
                   <img
@@ -495,9 +495,9 @@ const HealthHub = () => {
                   <aside className='pt-5 px-5'>
                     <h4 className='font-bold mb-3'>{item.title}</h4>
                     <p className='text-sm mb-4'>{item.description}</p>
-                    <button className='border-none text-sm rounded-md w-full'>
+                    <a href='#' className='font-medium'>
                       Read More
-                    </button>
+                    </a>
                   </aside>
                 </div>
               );

@@ -17,13 +17,15 @@ function HomePage() {
           <MaxWidthWrapper className='hero flex-col sm:flex-row w-screen sm:w-full'>
             <div className='hero1 w-full sm:w-1/2'>
               <h1 className='font-playfair font-bold text-3xl text-primary leading-normal sm:text-[2.8rem]'>
-                Seamlessly track your health with Trackit Wellness Kit
+                Seamlessly track your <br className='hidden sm:block' /> health
+                with Trackit <br className='hidden sm:block' /> Wellness Kit
               </h1>
               <p>
-                Track vaccinations, monitor community health, and get real-time
-                updates
+                Track vaccinations, monitor community health, and{' '}
+                <br className='hidden sm:block' />
+                get real-time updates
               </p>
-              <button>LEARN MORE</button>
+              <button className='bg-primary'>LEARN MORE</button>
             </div>
             <div className='hero2'>
               <img src={phone} />
@@ -34,7 +36,7 @@ function HomePage() {
         <MaxWidthWrapper className='bg-secondary py-20 w-screen text-white font-light sm:w-full'>
           <div className='flex flex-col gap-5 text-center w-full mx-auto sm:w-3/4'>
             <h1 className='font-playfair text-2xl font-medium'>
-              OUR IMPRESSIVE FEATURES
+              Our Impressive Features
             </h1>
             <p className='font-inter text-base sm:text-sm'>
               Trackit Wellness Kit provides simple, secure health monitoring
@@ -77,10 +79,10 @@ function HomePage() {
         </MaxWidthWrapper>
 
         <MaxWidthWrapper className='w-screen mt-12 sm:w-full'>
-          <h2 className='font-bold text-2xl text-center'>
+          <h2 className='font-bold text-2xl text-center font-playfair'>
             Yaba Health Summary
           </h2>
-          <p className='text-center mt-3 mb-24'>
+          <p className='text-center mt-3 mb-24 font-inter'>
             If you are not resident in Yaba, update your information on your
             profile to get for your location
           </p>
@@ -176,7 +178,7 @@ function HomePage() {
             {recentArticles.map((article, i) => {
               return (
                 <div
-                  className='bg-secondary text-white w-full mx-auto sm:w-[35%] pb-5 rounded-md sm:pb-3'
+                  className='bg-secondary text-white w-full mx-auto sm:w-[35%] rounded-md pb-3 sm:pb-0 '
                   key={i}
                 >
                   <img
@@ -187,9 +189,7 @@ function HomePage() {
                   <aside className='pt-5 px-5'>
                     <h4 className='font-bold mb-3'>{article.title}</h4>
                     <p className='text-sm mb-4'>{article.description}</p>
-                    <button className='border-none text-sm rounded-md w-full'>
-                      Read More
-                    </button>
+                    <a href='#'>Read More</a>
                   </aside>
                 </div>
               );
@@ -199,8 +199,8 @@ function HomePage() {
           <div className='text-primary mb-16'>
             <div className='w-full sm:w-1/2 mx-auto my-32 text-center gap-8'>
               <h2 className='font-playfair text-2xl font-bold leading-normal'>
-                TESTIMONIALS <br />
-                WHAT OUR USERS SAY
+                Testimonials <br />
+                What Our Users Say
               </h2>
               {/* <p className='font-inter text-base mt-6 w-full sm:w-4/6 mx-auto'>
                 Testimonial from some of our users

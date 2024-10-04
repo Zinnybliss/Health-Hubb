@@ -18,7 +18,8 @@ const Footer = () => {
           <h3 className='text-lg font-medium mb-3'>Newsletter</h3>
           <aside className='flex flex-col gap-2'>
             <p className='text-wrap'>
-              Subscribe to the Health Hubb newsletter for regular updates.
+              Subscribe to the Trackit Wellness Kit newsletter for regular
+              updates.
             </p>
             <div className='subsect4 flex flex-col gap-4'>
               <label
@@ -53,7 +54,7 @@ const Footer = () => {
             </p>
             <p className='flex items-center gap-3'>
               <BsEnvelopePaper />
-              Dolorsitamet@gmail.com
+              hello@trackitwellnesskit.com
             </p>
           </aside>
         </div>
@@ -82,7 +83,8 @@ const Footer = () => {
           <h3 className='text-lg font-medium mb-3'>Newsletter</h3>
           <aside className='flex flex-col gap-2'>
             <p className='text-wrap'>
-              Subscribe to the Health Hubb newsletter for regular updates
+              Subscribe to the Trackit Wellness Kit newsletter for regular
+              updates
             </p>
             <div className='subsect4 flex flex-col gap-4'>
               <label
